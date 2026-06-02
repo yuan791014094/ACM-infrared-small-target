@@ -1,0 +1,16 @@
+# ACM (Asymmetric Contextual Modulation) 复现 - Python 依赖
+# Python 3.9 / acm 虚拟环境验证通过
+#
+# torch / torchvision 请按 SETUP.md 用 CUDA 12.1 (cu121) 官方源单独安装：
+#   pip install torch==2.5.1 torchvision==0.20.1 --index-url https://download.pytorch.org/whl/cu121
+# 注意：本复现代码不依赖 torchvision（backbone 为手写 ResNet-20），torchvision 可选。
+#
+# 下面是除 torch 之外的依赖（清华源安装）：
+#   pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+numpy>=1.24,<2.1
+pillow>=9.0
+opencv-python>=4.5
+matplotlib>=3.5
+scipy>=1.10
+tqdm>=4.60

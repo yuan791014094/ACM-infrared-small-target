@@ -1,0 +1,33 @@
+# ---- 大文件 / 数据 / 产物（不进库）----
+# 数据集（自行下载，见 SETUP.md / HOWTO_RUN.md）
+data/
+
+# 训练产物：权重不进库，仅保留指标/曲线
+runs/
+*.pth
+*.pt
+*.ckpt
+
+# 评估产物：可视化图片不进库，指标 json 可按需 add
+results/**/vis/
+results/*.png
+results/**/*.png
+
+# 原论文 PDF（版权 + 体积大）
+*.pdf
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# ---- 环境 / 编辑器 / 工具 ----
+.venv/
+venv/
+env/
+.claude/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
