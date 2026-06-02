@@ -13,8 +13,8 @@ results/**/vis/
 results/*.png
 results/**/*.png
 
-# 原论文 PDF（版权 + 体积大）
-*.pdf
+# 原论文 PDF（版权 + 体积大）——仅排除原论文，实验报告 report.pdf 进库
+2020-WACV-ACM*.pdf
 
 # ---- Python ----
 __pycache__/
