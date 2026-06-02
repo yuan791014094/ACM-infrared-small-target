@@ -1,0 +1,10 @@
+{
+  "IoU": 0.6672105614477489,
+  "nIoU": 0.6969269489826158,
+  "split": "test",
+  "net": "acm_fpn",
+  "fusion": "topdown_local",
+  "downsample": "adjusted",
+  "block": 3,
+  "n": 86
+}

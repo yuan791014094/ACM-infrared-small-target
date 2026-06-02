@@ -1,0 +1,68 @@
+[
+  {
+    "IoU": 0.6652502700756211,
+    "nIoU": 0.7002245872173198,
+    "split": "test",
+    "net": "acm_fpn",
+    "fusion": "acm",
+    "downsample": "adjusted",
+    "block": 3,
+    "n": 86,
+    "tag": "acm_fpn"
+  },
+  {
+    "IoU": 0.64060465789093,
+    "nIoU": 0.6963275678802369,
+    "split": "test",
+    "net": "acm_unet",
+    "fusion": "acm",
+    "downsample": "adjusted",
+    "block": 3,
+    "n": 86,
+    "tag": "acm_unet"
+  },
+  {
+    "IoU": 0.6672105614477489,
+    "nIoU": 0.6969269489826158,
+    "split": "test",
+    "net": "acm_fpn",
+    "fusion": "topdown_local",
+    "downsample": "adjusted",
+    "block": 3,
+    "n": 86,
+    "tag": "acm_fpn_topdown_local"
+  },
+  {
+    "IoU": 0.6351442487823153,
+    "nIoU": 0.6806042496721412,
+    "split": "test",
+    "net": "acm_fpn",
+    "fusion": "bilocal",
+    "downsample": "adjusted",
+    "block": 3,
+    "n": 86,
+    "tag": "acm_fpn_bilocal"
+  },
+  {
+    "IoU": 0.6388153659060017,
+    "nIoU": 0.7052408834529478,
+    "split": "test",
+    "net": "acm_fpn",
+    "fusion": "biglobal",
+    "downsample": "adjusted",
+    "block": 3,
+    "n": 86,
+    "tag": "acm_fpn_biglobal"
+  },
+  {
+    "IoU": 0.6374098623352028,
+    "nIoU": 0.6749327758023905,
+    "split": "test",
+    "net": "acm_fpn",
+    "fusion": "acm",
+    "downsample": "regular",
+    "block": 3,
+    "n": 86,
+    "tag": "acm_fpn_regular"
+  }
+]
