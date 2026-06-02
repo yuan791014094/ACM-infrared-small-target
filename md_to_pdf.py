@@ -4,7 +4,7 @@ from pathlib import Path
 
 MD_FILE = Path("report.md")
 OUT_HTML = MD_FILE.with_suffix(".html")
-OUT_PDF  = MD_FILE.with_suffix(".pdf")
+OUT_PDF  = Path("D:/Desktop/doc/research/ACM/report.pdf")
 BASE_DIR = Path(".")
 
 def embed_images(text, base_dir):

@@ -74,6 +74,8 @@ $$Z = G(Y) \otimes X + L(X) \otimes Y$$
 | ACM-FPN | 0.0009 | 0.4893 | 0.6640 | 0.7027 | 0.7163 |
 | ACM-FPN++ | 0.0000 | 0.1562 | 0.6538 | 0.7016 | 0.7079 |
 
+![主模型训练曲线](results/figures/fig1_main_curves.png)
+
 **观察：**
 
 - 前 25 epoch 模型基本未学到有效特征（nIoU < 0.5），符合小目标检测难以快速收敛的特点
@@ -95,6 +97,8 @@ $$Z = G(Y) \otimes X + L(X) \otimes Y$$
 | BiGlobal | 双向：两路均用全局 | 0.6388 | 0.7052 |
 | **ACM（本文）** | **非对称：全局+点式** | **0.6653** | **0.7002** |
 
+![消融实验：调制方案 val nIoU 对比曲线](results/figures/fig2_ablation_fusion.png)
+
 **分析：**
 
 - ACM（nIoU=0.7002）在 100 epoch 下与 BiGlobal（0.7052）接近，但 ACM 设计更具物理意义：两路注意力互补（通道维感知 + 空间位置感知），而 BiGlobal 两路均为全局池化，缺乏空间定位能力，300 epoch 后差距预期更显著
@@ -108,6 +112,8 @@ $$Z = G(Y) \otimes X + L(X) \otimes Y$$
 | regular（标准 ResNet） | /16 | 0.6374 | 0.6749 |
 
 **结论：** adjusted（/4）比 regular（/16）nIoU 高出 **+0.025**，印证论文核心论点——**抑制降采样对红外小目标检测至关重要**。标准 ResNet 的 /16 降采样会使极小目标在深层完全消失。
+
+![下采样消融与 ACM++ 改进前后对比曲线](results/figures/fig3_downsample_and_pp.png)
 
 ---
 
