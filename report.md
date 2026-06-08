@@ -1,8 +1,14 @@
 # 红外小目标检测 ACM 复现与改进实验报告
 
-**作者：** yuan &nbsp;&nbsp;&nbsp; **日期：** 2026年6月 &nbsp;&nbsp;&nbsp; **数据集：** SIRST（427张，train/val/test = 256/85/86）
+| | |
+|---|---|
+| **专业** | 人工智能 |
+| **姓名** | 李乾平 |
+| **学号** | 23060830 |
+| **指导教师** | 周晓飞 |
+| **日期** | 2026 年 　 月 　 日 |
 
-**环境：** Python 3.9 + PyTorch 2.5.1 + CUDA 12.1（NVIDIA RTX 4060 Laptop GPU）
+**数据集：** SIRST（427张，train/val/test = 256/85/86）　|　**环境：** Python 3.9 + PyTorch 2.5.1 + CUDA 12.1（NVIDIA RTX 4060 Laptop GPU）
 
 ---
 
